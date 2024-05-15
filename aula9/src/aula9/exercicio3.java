@@ -6,7 +6,8 @@ public class exercicio3 {
 
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
-		int fatorial, numero = 1, resultado = 1;
+		int fatorial, numero = 1;
+		double resultado = 1;
 		
 		System.out.println("Digite um número do qual deseja o fatorial:");
 		fatorial = in.nextInt();
@@ -21,5 +22,6 @@ public class exercicio3 {
 			}
 			System.out.println(resultado);
 		}
+		in.close();
 	}
 }
