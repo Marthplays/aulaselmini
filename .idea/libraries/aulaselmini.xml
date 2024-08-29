@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="aulaselmini">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/aula11.zip!/" />
+      <root url="jar://$PROJECT_DIR$/aula7.zip!/" />
+      <root url="jar://$PROJECT_DIR$/aula9.zip!/" />
+      <root url="jar://$PROJECT_DIR$/aula10.zip!/" />
+      <root url="jar://$PROJECT_DIR$/aula8.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
