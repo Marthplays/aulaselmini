@@ -1,18 +1,16 @@
+import java.util.Random;
 import java.util.Scanner;
 
-public class matriz {
-
+public class exercicio5 {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        Random rng = new Random();
         int[][] x = new int[2][3];
         //entrada de dados
         for (int i = 0; i < x.length; i++) {
-            for (int j = 0; j < x.length; j++) {
-                System.out.println("Valor: ");
-                x[i][j] = in.nextInt();
+            for (int j = 0; j < x[i].length; j++) {
+                x[i][j] = rng.nextInt(10);
             }
         }
-
         //impressao no formato de tabela
         System.out.println();
         for (int i = 0; i < x.length; i++) {
@@ -21,5 +19,14 @@ public class matriz {
             }
             System.out.println();
         }
+        //impressao transposta
+        System.out.println();
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 2; j++) {
+                System.out.print(x[j][i] + "\t");
+            }
+            System.out.println();
+        }
     }
 }
+
