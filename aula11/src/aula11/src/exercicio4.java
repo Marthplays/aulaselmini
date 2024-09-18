@@ -1,3 +1,5 @@
+package aula11.src;
+
 import java.util.Random;
 
 public class exercicio4 {
@@ -43,6 +45,13 @@ public class exercicio4 {
             double media = (double) somaColunas[i] / 3;
             System.out.println("Media das vendas no mês " + meses[i] + ": " + media);
         }
+        for (int i = 0; i < vendas.length; ++i) {
+            for (int j = 0; j < ; j++) {
+                
+            }
+        }
+
+        System.out.println("O mês com mais vendas foi: " +);
 
     }
 }
