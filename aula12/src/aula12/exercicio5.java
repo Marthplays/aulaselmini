@@ -13,5 +13,6 @@ public class exercicio5 {
         for (int i = 0; i < x.length; i++) {
             x[i] = rng.nextInt(10);
         }
+        return 0;
     }
 }

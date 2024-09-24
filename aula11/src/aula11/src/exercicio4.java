@@ -46,12 +46,12 @@ public class exercicio4 {
             System.out.println("Media das vendas no mês " + meses[i] + ": " + media);
         }
         for (int i = 0; i < vendas.length; ++i) {
-            for (int j = 0; j < ; j++) {
+            for (int j = 0; j < vendas.length; j++) {
                 
             }
         }
 
-        System.out.println("O mês com mais vendas foi: " +);
+        System.out.println("O mês com mais vendas foi: " + vendas);
 
     }
 }
