@@ -8,13 +8,7 @@ public class ex2 {
 
         for (int i = 0; i < x.length; i++) {
             for (int j = 0; j < x[i].length; j++) {
-                x[i][j] = rng.nextInt(0, 50);
-                if (i + j == x.length - 2) {
-                    dsAcima += x[i][j];
-                }
-                if (i + j == x.length - 2) {
-                    System.out.print( + x[i][j] + " ");
-                }
+                x[i][j] = rng.nextInt(0, 10);
             }
         }
         System.out.println();
@@ -24,7 +18,8 @@ public class ex2 {
             }
             System.out.println();
         }
-        System.out.println("Soma dos números acima: " + dsAcima);
+        System.out.println("Numeros:" + x[0][0] + " " + x[0][1] + " " + x[0][1] + " " + x[0][3] + " " + x[1][0] + " " + x[1][1] + " " + x[1][2] + " " + x[2][0] + " " + x[2][1] + " " + x[3][0]);
+        System.out.println("Soma dos números acima: " + (x[0][0] + x[0][1] + x[0][1] + x[0][3] + x[1][0] + x[1][1] + x[1][2] + x[2][0] + x[2][1] + x[3][0]));
 
     }
 }
