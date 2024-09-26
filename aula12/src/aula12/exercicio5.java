@@ -19,9 +19,7 @@ public class exercicio5 {
         }
     }
     public static void imprimirVetor(int[] x) {
-        for (int i : x) {
-            System.out.print(x[i] + " ");
-        }
+        for (int i : x) System.out.print(x[i] + " ");
     }
     public static void inversaoVetor(int[] x) {
         int aux;
