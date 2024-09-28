@@ -25,5 +25,4 @@ public class exemplo3 {
 		}
 		valor1++;	
 	}
-		in.close();
 	}
