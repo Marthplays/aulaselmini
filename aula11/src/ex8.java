@@ -1,5 +1,9 @@
 import java.util.Random;
 
+/*Escreva um programa em Java que preencha uma matriz quadrada de ordem 10 com valores
+aleatórios. Os elementos de cada linha da matriz deverão ser ordenados em ordem crescente.
+Manipule cada linha como um vetor independente dos demais.*/
+
 public class ex8 {
     public static void main(String[] args) {
         Random rng = new Random();
