@@ -19,8 +19,6 @@ public class exerciciobonus {
         letra = in.next();
         if (letra.equalsIgnoreCase("S")) {
             soma(matriz);
-        } else if () {
-
         }
     }
     public static void lerDados(int[][] matriz) {
