@@ -18,7 +18,11 @@ public class exerciciobonus {
         System.out.println("Digite S para soma ou M para média");
         letra = in.next();
         if (letra.equalsIgnoreCase("S")) {
-            soma(matriz);
+            System.out.println(pegaSoma(matriz));
+        } else if (letra.equalsIgnoreCase("M")) {
+            //System.out.println(pegaMedia(matriz));
+        } else {
+            System.out.println("Digitação inválida!");
         }
     }
     public static void lerDados(int[][] matriz) {
@@ -39,17 +43,21 @@ public class exerciciobonus {
             System.out.println();
         }
     }
-
-    public static int soma(int[][] matriz) {
+    public static int pegaSoma(int[][] matriz) {
         int total = 0;
-
         for (int i = 0; i < (matriz.length - 1) / 2; i++) {
             for (int j = 1 + i; j < matriz.length - 1 - i; j++) {
-                total += matriz[i][j];
+                total = matriz[i][j] + matriz[i][j];
             }
         }
-
         return total;
-
+    }
+    public static double pegaMedia(int[][] matriz,int total) {
+        for (int i = 0; i < (matriz.length - 1) / 2; i++) {
+            for (int j = 1 + i; j < matriz.length - 1 - i; j++) {
+                total = matriz[i][j] + matriz[i][j];
+            }
+        }
+        return total;
     }
 }
