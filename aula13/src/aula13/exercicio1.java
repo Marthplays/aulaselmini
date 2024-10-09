@@ -38,6 +38,9 @@ public class exercicio1 {
 
     public static String inverterPalavra(String palavra) {
         char[] letra = new char[palavra.length()];
-        
+        for (int i = palavra.length() - 1; i >= 0; i--) {
+            letra[palavra.length() - 1 - i] = palavra.charAt(i);
+        }
+        return new String(letra);
     }
 }
