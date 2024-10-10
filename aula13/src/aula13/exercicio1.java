@@ -9,13 +9,7 @@ public class exercicio1 {
         System.out.println("Insira a quantidade de palavras que deseja conferir:");
         int qntPalavras = in.nextInt();
 
-        String palavra;
         String[] palavras = new String[qntPalavras];
-
-        for (int i = 0; i < qntPalavras; i++) {
-            System.out.println("Digite as palavras:");
-            palavras[i] = in.next();
-        }
 
         lerPalavras(palavras);
         localizarPar(palavras);
@@ -33,6 +27,11 @@ public class exercicio1 {
         String invertida;
         for (String palavra : palavras) {
             invertida = inverterPalavra(palavra);
+            for (String word : palavras) {
+                if (word.equalsIgnoreCase(invertida)) {
+                    System.out.println(palavra + " <--> " + invertida);
+                }
+            }
         }
     }
 
