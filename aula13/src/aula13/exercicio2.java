@@ -14,7 +14,7 @@ public class exercicio2 {
         System.out.println("Digite qual será a rotação:");
         rotacao = in.nextInt();
 
-        codificada = rotacionarPalavra(palavra,rotacao);
+        codificada = rotacionarPalavra(palavra, rotacao);
 
         System.out.println("Palavra codificada: " + codificada);
     }
@@ -27,10 +27,9 @@ public class exercicio2 {
             letra = palavra.charAt(i);
             if (Character.isUpperCase(letra)) {
                 letraCodificada = (char) ((letra - 'A' + rotacao) % 26 + 'A');
-            } else-if (Character.isLowerCase(letra)) {
-                letraCodificada = (char) ((letra - 'a' + rotacao) % 26 + 'a');
+                palavraCodificada += letraCodificada;
             }
-
         }
+        return palavraCodificada;
     }
 }
