@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="22" />
+    <bytecodeTargetLevel target="22">
+      <module name="aula13" target="" />
+      <module name="aulaselmini" target="22" />
+    </bytecodeTargetLevel>
   </component>
 </project>
