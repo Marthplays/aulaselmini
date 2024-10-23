@@ -22,6 +22,7 @@ public class ex1 {
                     media += Double.parseDouble(vetor[i]);
                 }
                 media = media / (vetor.length - 1);
+                System.out.println(media);
             }
         } catch (FileNotFoundException e) {
             System.out.println("Erro ao abrir o arquivo!");
