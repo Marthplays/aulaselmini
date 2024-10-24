@@ -14,5 +14,6 @@ public class texto {
         while ((linha = buffer.readLine()) !=null) {
             System.out.println(linha);
         }
+        buffer.close();
     }
 }

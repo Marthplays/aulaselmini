@@ -7,12 +7,12 @@ public class ex1 {
     public static void main(String[] args) {
         try {
             FileReader file;
-            BufferedReader buffer ;
+            BufferedReader buffer;
             String linha;
             String[] vetor;
             double media;
 
-            file = new FileReader("D:\\novo\\aluno.txt");
+            file = new FileReader("D:\\aluno.txt");
             buffer = new BufferedReader(file);
 
             while ((linha = buffer.readLine()) !=null) {
@@ -22,7 +22,14 @@ public class ex1 {
                     media += Double.parseDouble(vetor[i]);
                 }
                 media = media / (vetor.length - 1);
-                System.out.println(media);
+                System.out.println(vetor[0]);
+                System.out.println("Média: " + media);
+                if (media >= 6) {
+                    System.out.println("Aprovado");
+                } else {
+                    System.out.println("Reprovado");
+                }
+                System.out.println();
             }
         } catch (FileNotFoundException e) {
             System.out.println("Erro ao abrir o arquivo!");
